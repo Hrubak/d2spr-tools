@@ -56,15 +56,15 @@ repo start auto device/samsung/d2-common/audio
 echo "revert a2dp commit"
 cdv device/samsung/d2-common/audio
 git reset --hard
-git revert -m 1 36f45f3a64738503e571427a9dcde8cfc7df4e5a
+git revert -n 36f45f3a64738503e571427a9dcde8cfc7df4e5a
 cdb
 
-#repo start auto packages/apps/Phone
-#echo "### fix ringtones"
-#cdv packages/apps/Phone
-#git reset --hard
-#http_patch http://chris41g.devphone.org/patches/ringer.patch
-#cdb
+repo start auto device/samsung/d2-common/
+echo "revert lowpower commit"
+cdv device/samsung/d2-common/
+git reset --hard
+git revert -n e78398126b4387fbc55c3e9de7b9329bdb4ef30a
+cdb
 
 #repo start auto system/core
 #echo "### storage"
