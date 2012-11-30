@@ -66,14 +66,12 @@ git reset --hard
 git revert -n e78398126b4387fbc55c3e9de7b9329bdb4ef30a
 cdb
 
-#repo start auto system/core
-#echo "### storage"
-#cdv system/core
-#git reset --hard
-#git fetch https://github.com/CyanogenMod/android_system_core refs/heads/jellybean
-#git cherry-pick be5bb1d4aa98e066c44e5ee8a54a9bf92b17aa37
-#http_patch http://chris41g.devphone.org/patches/steve.patch
-#cdb
+repo start auto device/samsung/msm8960-common
+echo "fix hal"
+cdv device/samsung/msm8960-common
+git reset --hard
+git revert -n dd49cb775afec0ff84720ae02476b16b8067a3e3
+cdb
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
