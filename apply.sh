@@ -52,28 +52,28 @@ set -e
 
 ################ Apply Patches Below ####################
 
-#repo start auto bootable/recovery
-#echo "### patch CWM to backup android_secure on internal and external"
-#cdv bootable/recovery
-#git reset --hard
-#http_patch http://chris41g.devphone.org/patches/nandroid.patch
-#cdb
+repo start auto device/samsung/msm8960-common
+echo "### Add Storage settings in GalaxyS3Settings"
+cdv device/samsung/msm8960-common
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/30/27230/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto packages/apps/Phone
-#echo "### fix ringtones"
-#cdv packages/apps/Phone
-#git reset --hard
-#http_patch http://chris41g.devphone.org/patches/ringer.patch
-#cdb
+repo start auto device/samsung/d2-common
+echo "### d2: Enable Bluetooth"
+cdv pdevice/samsung/d2-common
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/16/27516/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/15/27515/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/14/27514/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto system/core
-#echo "### storage"
-#cdv system/core
-#git reset --hard
-#git fetch https://github.com/CyanogenMod/android_system_core refs/heads/jellybean
-#git cherry-pick be5bb1d4aa98e066c44e5ee8a54a9bf92b17aa37
-#http_patch http://chris41g.devphone.org/patches/steve.patch
-#cdb
+repo start auto vendor/cm
+echo "### cm: apns-conf.xml: (eHRPD/LTE handoff) Change pdp type for default/mms APNs"
+cdv vendor/cm
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/05/27505/1 && git cherry-pick FETCH_HEAD
+cdb
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
