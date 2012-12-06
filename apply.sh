@@ -59,21 +59,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/30/27230/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto device/samsung/d2-common
-echo "### d2: Enable Bluetooth"
-cdv pdevice/samsung/d2-common
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/16/27516/1 && git cherry-pick FETCH_HEAD
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/15/27515/1 && git cherry-pick FETCH_HEAD
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/14/27514/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto path-to
+#echo ""
+#cdv path-to
+#git reset --hard
+#cdb
 
-repo start auto vendor/cm
-echo "### cm: apns-conf.xml: (eHRPD/LTE handoff) Change pdp type for default/mms APNs"
-cdv vendor/cm
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/05/27505/1 && git cherry-pick FETCH_HEAD
-cdb
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
