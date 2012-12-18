@@ -66,12 +66,12 @@ set -e
 #git revert -n e78398126b4387fbc55c3e9de7b9329bdb4ef30a
 #cdb
 
-repo start auto device/samsung/msm8960-common
-echo "### add Storage Settings"
-cdv device/samsung/msm8960-common
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/30/27230/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto device/samsung/msm8960-common
+#echo "### add Storage Settings"
+#cdv device/samsung/msm8960-common
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/30/27230/1 && git cherry-pick FETCH_HEAD
+#cdb
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
