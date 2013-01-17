@@ -52,19 +52,19 @@ set -e
 
 ################ Apply Patches Below ####################
 
-#repo start auto device/samsung/d2-common/audio
-#echo "revert a2dp commit"
-#cdv device/samsung/d2-common/audio
-#git reset --hard
-#git revert -n 36f45f3a64738503e571427a9dcde8cfc7df4e5a
-#cdb
+repo start auto hardware/qcom/audio-caf
+echo "disable support for LPA playback on bluetooth"
+cdv hardware/qcom/audio-caf
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/13/30213/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto device/samsung/d2-common/
-#echo "revert lowpower commit"
-#cdv device/samsung/d2-common/
-#git reset --hard
-#git revert -n e78398126b4387fbc55c3e9de7b9329bdb4ef30a
-#cdb
+repo start auto frameworks/base
+echo "GPS commits from CodeAurora"
+cdv frameworks/base
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/85/30385/1 && git cherry-pick FETCH_HEAD
+cdb
 
 #repo start auto device/samsung/msm8960-common
 #echo "### add Storage Settings"
