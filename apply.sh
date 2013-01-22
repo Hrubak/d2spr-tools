@@ -52,12 +52,12 @@ set -e
 
 ################ Apply Patches Below ####################
 
-repo start auto hardware/qcom/audio-caf
-echo "disable support for LPA playback on bluetooth"
-cdv hardware/qcom/audio-caf
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/13/30213/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto hardware/qcom/audio-caf
+#echo "disable support for LPA playback on bluetooth"
+#cdv hardware/qcom/audio-caf
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/13/30213/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 repo start auto frameworks/base
 echo "GPS commits from CodeAurora"
