@@ -66,12 +66,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/49/29349/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto frameworks/opt/telephony
-echo "PhoneProxy: On v6 or greater RIL, when LTE_ON_CDMA is TRUE"
-cdv frameworks/opt/telephony
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/95/28195/2 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto frameworks/opt/telephony
+#echo "PhoneProxy: On v6 or greater RIL, when LTE_ON_CDMA is TRUE"
+#cdv frameworks/opt/telephony
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/95/28195/2 && git cherry-pick FETCH_HEAD
+#cdb
 
 repo start auto device/samsung/qcom-common
 echo "REVERT: qcom-common: Enable CAF audio variant"
