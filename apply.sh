@@ -85,7 +85,7 @@ echo "REVERT:d2: Update audio policy for new driver / More audio use case enhace
 cdv device/samsung/d2-common
 git reset --hard
 git revert -n e7ecaaac0b74dbb80a535f1d931c487b5989d1f6
-git revert -n 3f96e9b15b179981fdab6a26f032494b89313df9
+git revert -n 259da182eaaa0f6d16e41a14454ba5c2b4e82229
 cdb
 
 
