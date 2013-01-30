@@ -66,13 +66,11 @@ cdb
 #git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/95/28195/2 && git cherry-pick FETCH_HEAD
 #cdb
 
-repo start auto device/samsung/d2-common
-echo "AOKP cherry-picks"
-cdv device/samsung/d2-common
-git reset --hard
-git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/03/5303/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/02/5302/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto device/samsung/d2-common
+#echo "cherry-picks"
+#cdv device/samsung/d2-common
+#git reset --hard
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
