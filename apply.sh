@@ -53,7 +53,7 @@ set -e
 ################ Apply Patches Below ####################
 
 repo start auto hardware/qcom/audio-caf
-echo "AOKP cherrypicks"
+echo "AOKP cherry-picks"
 cdv hardware/qcom/audio-caf
 git reset --hard
 git fetch http://gerrit.sudoservers.com/AOKP/android_hardware_qcom_audio-caf refs/changes/90/5290/1 && git cherry-pick FETCH_HEAD
@@ -75,7 +75,7 @@ cdb
 #cdb
 
 repo start auto device/samsung/d2-common
-echo "enable a2dp no delay for d2 devices"
+echo "AOKP cherry-picks"
 cdv device/samsung/d2-common
 git reset --hard
 git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/03/5303/1 && git cherry-pick FETCH_HEAD
