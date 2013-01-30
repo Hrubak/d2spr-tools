@@ -52,14 +52,6 @@ set -e
 
 ################ Apply Patches Below ####################
 
-repo start auto hardware/qcom/audio-caf
-echo "AOKP cherry-picks"
-cdv hardware/qcom/audio-caf
-git reset --hard
-git fetch http://gerrit.sudoservers.com/AOKP/android_hardware_qcom_audio-caf refs/changes/90/5290/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/android_hardware_qcom_audio-caf refs/changes/91/5291/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/android_hardware_qcom_audio-caf refs/changes/95/5295/1 && git cherry-pick FETCH_HEAD
-
 repo start auto frameworks/base
 echo "GPS commits from CodeAurora"
 cdv frameworks/base
@@ -79,9 +71,7 @@ echo "AOKP cherry-picks"
 cdv device/samsung/d2-common
 git reset --hard
 git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/03/5303/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/01/5301/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/02/5302/1 && git cherry-pick FETCH_HEAD
-git revert -n 1a7763691ee07f42e1fcb6d7824617a0381db6b8
 cdb
 
 ##### SUCCESS ####
