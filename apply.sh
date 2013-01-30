@@ -52,13 +52,6 @@ set -e
 
 ################ Apply Patches Below ####################
 
-#repo start auto hardware/qcom/audio-caf
-#echo "disable support for LPA playback on bluetooth"
-#cdv hardware/qcom/audio-caf
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/13/30213/1 && git cherry-pick FETCH_HEAD
-#cdb
-
 repo start auto frameworks/base
 echo "GPS commits from CodeAurora"
 cdv frameworks/base
@@ -73,21 +66,12 @@ cdb
 #git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/95/28195/2 && git cherry-pick FETCH_HEAD
 #cdb
 
-repo start auto device/samsung/qcom-common
-echo "REVERT: qcom-common: Enable CAF audio variant"
-cdv device/samsung/qcom-common
-git reset --hard
-git revert -n 22a9c684bf73187f07b740955a4d2c362e74f943
-cdb
-
 repo start auto device/samsung/d2-common
-echo "REVERT:d2: Update audio policy for new driver / More audio use case enhacements"
+echo "enable a2dp no delay for d2 devices"
 cdv device/samsung/d2-common
 git reset --hard
-git revert -n e7ecaaac0b74dbb80a535f1d931c487b5989d1f6
-git revert -n 259da182eaaa0f6d16e41a14454ba5c2b4e82229
+git fetch http://gerrit.sudoservers.com/AOKP/android_device_samsung_d2-common refs/changes/03/5303/1 && git cherry-pick FETCH_HEAD
 cdb
-
 
 ##### SUCCESS ####
 SUCCESS=true
