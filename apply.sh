@@ -66,11 +66,12 @@ cdb
 #git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/95/28195/2 && git cherry-pick FETCH_HEAD
 #cdb
 
-#repo start auto device/samsung/d2-common
-#echo "cherry-picks"
-#cdv device/samsung/d2-common
-#git reset --hard
-#cdb
+repo start auto kernel/samsung/d2
+echo "Fix:wpa/wpa2 tethering"
+cdv kernel/samsung/d2
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/56/31356/1 && git cherry-pick FETCH_HEAD
+cdb
 
 ##### SUCCESS ####
 SUCCESS=true
