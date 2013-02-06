@@ -52,12 +52,12 @@ set -e
 
 ################ Apply Patches Below ####################
 
-repo start auto frameworks/base
-echo "GPS commits from CodeAurora"
-cdv frameworks/base
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/49/29349/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto frameworks/base
+#echo "GPS commits from CodeAurora"
+#cdv frameworks/base
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/49/29349/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 #repo start auto frameworks/opt/telephony
 #echo "PhoneProxy: On v6 or greater RIL, when LTE_ON_CDMA is TRUE"
