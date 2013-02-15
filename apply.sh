@@ -51,33 +51,25 @@ repo abandon auto
 set -e
 
 ################ Apply Patches Below ####################
-
-repo start auto packages/apps/Bluetooth
-echo "Revert BT MAP 1/3"
-cdv packages/apps/Bluetooth
+repo start auto frameworks/base
+echo "REVERT: Revert GPS changes for now until issues are resolved."
+cdv frameworks/base
 git reset --hard
-git revert -n 5d54e372e49ebfd7049a896b20e81c51af81d409
-git revert -n ae002e254c80def23897af49414e4ee0ab11deb2
-git revert -n 0aab1b683358baffa8e98e7009693e7a696243b8
-git revert -n 8e80a44984cc88983aa996a036ab4edb1f391ef0
-git revert -n a7c5b31fdbc9d61d2d35d7ddce932ec1bac1719f
-git revert -n 078e032940c11e9a63800ce192caa501426d6e9f
-git revert -n bffc5d0a4d74b2cf7670fef9c7d86d5d248cba71
-git revert -n e7f60fef58f755788cd61aea8acbd9051f914214
+git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
 repo start auto packages/apps/Settings
-echo "Revert BT MAP 2/3"
+echo "Settings: add battery bar (1/2)"
 cdv packages/apps/Settings
 git reset --hard
-git revert -n 408854a8c4e99c6c9c801fc107119deb25677d48
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/1 && git cherry-pick FETCH_HEAD
 cdb
 
 repo start auto frameworks/base
-echo "Revert BT MAP 3/3"
+echo "Framework: add battery bar (2/2)"
 cdv frameworks/base
 git reset --hard
-git revert -n f4d8b457f6bd83bd9d043ed3b1463fdb588b3cfa
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
 cdb
 
 repo start auto kernel/samsung/d2
