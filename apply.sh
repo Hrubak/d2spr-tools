@@ -58,26 +58,26 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-#repo start auto packages/apps/Settings
-#echo "Settings: add battery bar (1/2)"
-#cdv packages/apps/Settings
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto packages/apps/Settings
+echo "Settings: add battery bar (1/2)"
+cdv packages/apps/Settings
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto frameworks/base
-#echo "Framework: add battery bar (2/2)"
-#cdv frameworks/base
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto frameworks/base
+echo "Framework: add battery bar (2/2)"
+cdv frameworks/base
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto kernel/samsung/d2
-#echo "Fix:wpa/wpa2 tethering"
-#cdv kernel/samsung/d2
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/56/31356/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto kernel/samsung/d2
+echo "Fix:wpa/wpa2 tethering"
+cdv kernel/samsung/d2
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/56/31356/1 && git cherry-pick FETCH_HEAD
+cdb
 
 ##### SUCCESS ####
 SUCCESS=true
