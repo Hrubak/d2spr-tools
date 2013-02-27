@@ -93,6 +93,13 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/54/29154/1 && git cherry-pick FETCH_HEAD
 cdb
 
+repo start auto packages/apps/Mmms
+echo "Add quick emoji button next to text input"
+cdv packages/apps/Mms
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
+cdb
+
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
