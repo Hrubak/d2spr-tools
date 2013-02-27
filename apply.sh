@@ -79,6 +79,20 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/56/31356/1 && git cherry-pick FETCH_HEAD
 cdb
 
+repo start auto packages/apps/Camera
+echo "Add storage selection (1/2)"
+cdv packages/apps/Camera
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera refs/changes/53/29153/6 && git cherry-pick FETCH_HEAD
+cdb
+
+repo start auto packages/apps/Gallery2
+echo "Add storage selection (2/2)"
+cdv packages/apps/Gallery2
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/54/29154/1 && git cherry-pick FETCH_HEAD
+cdb
+
 ##### SUCCESS ####
 SUCCESS=true
 exit 0
