@@ -72,12 +72,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto kernel/samsung/d2
-echo "Fix:wpa/wpa2 tethering"
-cdv kernel/samsung/d2
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/56/31356/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto kernel/samsung/d2
+#echo "Fix:wpa/wpa2 tethering"
+#cdv kernel/samsung/d2
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/56/31356/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 repo start auto packages/apps/Camera
 echo "Add storage selection (1/2)"
