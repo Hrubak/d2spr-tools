@@ -65,19 +65,19 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/95/33195/1 && git cherry-pick FETCH_HEAD
 cdb
 
-#repo start auto packages/apps/Settings
-#echo "Settings: add battery bar (1/2)"
-#cdv packages/apps/Settings
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/3 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto packages/apps/Settings
+echo "Settings: add battery bar (1/2)"
+cdv packages/apps/Settings
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/3 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto frameworks/base
-#echo "Framework: add battery bar (2/2)"
-#cdv frameworks/base
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto frameworks/base
+echo "Framework: add battery bar (2/2)"
+cdv frameworks/base
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
+cdb
 
 repo start auto packages/apps/Camera
 echo "Add storage selection (1/2)"
