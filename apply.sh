@@ -58,13 +58,6 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-repo start auto device/samsung/d2-common
-echo "d2: audio: Fix routing for BT voicedial feature"
-cdv device/samsung/d2-common
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/95/33195/1 && git cherry-pick FETCH_HEAD
-cdb
-
 repo start auto packages/apps/Settings
 echo "Settings: add battery bar (1/2)"
 cdv packages/apps/Settings
