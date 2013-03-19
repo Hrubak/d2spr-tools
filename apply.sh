@@ -51,6 +51,7 @@ repo abandon auto
 set -e
 
 ################ Apply Patches Below ####################
+
 repo start auto frameworks/base
 echo "REVERT: Revert GPS changes for now until issues are resolved."
 cdv frameworks/base
@@ -72,26 +73,33 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
 cdb
 
-#repo start auto packages/apps/Camera
-#echo "Add storage selection (1/2)"
-#cdv packages/apps/Camera
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Camera refs/changes/53/29153/6 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto packages/apps/Trebuchet
+echo "Workspace and AppList Icon Tap/Touch"
+cdv packages/apps/Trebuchet
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto packages/apps/Gallery2
-#echo "Add storage selection (2/2)"
-#cdv packages/apps/Gallery2
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/54/29154/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto vendor/cm
+echo "Use jpegOptimized bootanimations"
+cdv vendor/cm
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/93/33593/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto packages/apps/Mms
-#echo "Add quick emoji button next to text input"
-#cdv packages/apps/Mms
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto packages/apps/Mms
+echo "Add quick emoji button next to text input"
+cdv packages/apps/Mms
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
+cdb
+
+repo start auto packages/apps/Phone
+echo "Make going to call log after call optional."
+cdv packages/apps/Phone
+git reset --hard
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Phone refs/changes/21/33321/2 && git cherry-pick FETCH_HEAD
+cdb
 
 ##### SUCCESS ####
 SUCCESS=true
