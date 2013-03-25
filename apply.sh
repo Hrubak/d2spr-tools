@@ -80,12 +80,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto vendor/cm
-echo "Use jpegOptimized bootanimations"
-cdv vendor/cm
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/93/33593/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto vendor/cm
+#echo "Use jpegOptimized bootanimations"
+#cdv vendor/cm
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/93/33593/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 repo start auto packages/apps/Mms
 echo "Add quick emoji button next to text input"
