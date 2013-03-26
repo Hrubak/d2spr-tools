@@ -94,12 +94,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto packages/apps/Phone
-echo "Make going to call log after call optional."
-cdv packages/apps/Phone
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Phone refs/changes/21/33321/2 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto packages/apps/Phone
+#echo "Make going to call log after call optional."
+#cdv packages/apps/Phone
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Phone refs/changes/21/33321/2 && git cherry-pick FETCH_HEAD
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
