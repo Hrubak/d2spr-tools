@@ -108,12 +108,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/11/34911/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto packages/apps/Mms
-echo "Add quick emoji button next to text input"
-cdv packages/apps/Mms
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto packages/apps/Mms
+#echo "Add quick emoji button next to text input"
+#cdv packages/apps/Mms
+#git reset --hard
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 #repo start auto packages/apps/Phone
 #echo "Make going to call log after call optional."
