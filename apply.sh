@@ -60,6 +60,13 @@ git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808
 cdb
 
 repo start auto packages/apps/Settings
+echo "REVERT: cmstats: Remove preferences and always enable stats"
+cdv packages/apps/Settings
+git reset --hard
+git revert -n 3c052c2d927d3a668793989cf9e7d091035128b8
+cdb
+
+repo start auto packages/apps/Settings
 echo "Settings: add battery bar (1/2)"
 cdv packages/apps/Settings
 git reset --hard
