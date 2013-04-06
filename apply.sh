@@ -60,13 +60,6 @@ git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808
 cdb
 
 repo start auto packages/apps/Settings
-echo "REVERT: cmstats: Remove preferences and always enable stats"
-cdv packages/apps/Settings
-git reset --hard
-git revert -n 3c052c2d927d3a668793989cf9e7d091035128b8
-cdb
-
-repo start auto packages/apps/Settings
 echo "Settings: add battery bar (1/2)"
 cdv packages/apps/Settings
 git reset --hard
@@ -87,40 +80,12 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
 cdb
 
-#repo start auto kernel/samsung/d2
-#echo "video: msm: re-enable framebuffer splash screen"
-#cdv kernel/samsung/d2
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/10/34910/1 && git cherry-pick FETCH_HEAD
-#cdb
-
 repo start auto kernel/samsung/d2
 echo "bcmdhd: squash updated bcmdhd stack from google"
 cdv kernel/samsung/d2
 git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/28/34928/1 && git cherry-pick FETCH_HEAD
 cdb
-
-repo start auto device/samsung/d2-common
-echo "d2: Update Adreno blob list"
-cdv device/samsung/d2-common
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/55/34855/1 && git cherry-pick FETCH_HEAD
-cdb
-
-repo start auto device/samsung/d2-common
-echo "d2-common: put cid on the boot logo"
-cdv device/samsung/d2-common
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/11/34911/1 && git cherry-pick FETCH_HEAD
-cdb
-
-#repo start auto packages/apps/Mms
-#echo "Add quick emoji button next to text input"
-#cdv packages/apps/Mms
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Mms refs/changes/55/32455/1 && git cherry-pick FETCH_HEAD
-#cdb
 
 #repo start auto packages/apps/Phone
 #echo "Make going to call log after call optional."
