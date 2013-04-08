@@ -18,6 +18,7 @@ Modify your `.repo/local_manifest.xml` as follows:
     <project name="CyanogenMod/android_device_samsung_d2-common" path="device/samsung/d2-common" remote="github" revision="cm-10.1" />
     <project name="CyanogenMod/android_kernel_samsung_d2" path="kernel/samsung/d2" remote="github" revision="cm-10.1" />
     <project name="CyanogenMod/android_device_samsung_d2spr" path="device/samsung/d2spr" remote="github" revision="cm-10.1" />
+    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-10.1" />
   </manifest>
 ```
 
