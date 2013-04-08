@@ -1,5 +1,6 @@
 L710/d2spr Build Instructions
 =======================
+http://wiki.cyanogenmod.org/w/Build_for_d2spr
 ```
 mkdir -p android/CM10
 cd android/CM10
