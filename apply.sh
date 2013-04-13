@@ -63,7 +63,7 @@ repo start auto packages/apps/Settings
 echo "Settings: add battery bar (1/2)"
 cdv packages/apps/Settings
 git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/3 && git cherry-pick FETCH_HEAD
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/5 && git cherry-pick FETCH_HEAD
 cdb
 
 repo start auto frameworks/base
