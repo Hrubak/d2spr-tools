@@ -80,9 +80,9 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto haredware/qcom/display-caf
+repo start auto hardware/qcom/display-caf
 echo "Revert hwc: Configure pipe for FB even if we exceed max layers"
-cdv haredware/qcom/display-caf
+cdv hardware/qcom/display-caf
 git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_display-caf refs/changes/85/35585/1 && git cherry-pick FETCH_HEAD
 cdb
