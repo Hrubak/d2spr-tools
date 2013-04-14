@@ -80,19 +80,6 @@ git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto hardware/qcom/display-caf
-echo "Revert hwc: Configure pipe for FB even if we exceed max layers"
-cdv hardware/qcom/display-caf
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_display-caf refs/changes/85/35585/1 && git cherry-pick FETCH_HEAD
-cdb
-
-repo start auto kernel/samsung/d2
-echo "d2: Cleanup Logspam"
-cdv kernel/samsung/d2
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/81/35381/1 && git cherry-pick FETCH_HEAD
-cdb
 
 ##### SUCCESS ####
 SUCCESS=true
