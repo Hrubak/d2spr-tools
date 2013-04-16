@@ -35,6 +35,15 @@ This script will remove any topic branches named auto, then apply all patches un
 ```
 d2spr-tools/apply.sh
 ```
+Usage: 
+```
+repo start auto 'path'                            #start a new branch 'auto' and set the path to your project
+echo "say something about the patch"              #echo something
+cdv 'same path ^'                                 #cd to the project path
+git reset --hard                                  #make the project clean
+git fetch, git revert, git something put it here  #add you cherry-picks, reverts, etc here
+cdb                                               #cd back to working_dir
+```
 
 Build
 =====
