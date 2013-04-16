@@ -59,27 +59,12 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-repo start auto packages/apps/Settings
-echo "Settings: add battery bar (1/2)"
-cdv packages/apps/Settings
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/9 && git cherry-pick FETCH_HEAD
-cdb
-
-repo start auto frameworks/base
-echo "Framework: add battery bar (2/2)"
-cdv frameworks/base
-git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/12/31912/2 && git cherry-pick FETCH_HEAD
-cdb
-
 repo start auto packages/apps/Trebuchet
 echo "Workspace and AppList Icon Tap/Touch"
 cdv packages/apps/Trebuchet
 git reset --hard
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
 cdb
-
 
 ##### SUCCESS ####
 SUCCESS=true
