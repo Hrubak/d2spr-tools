@@ -7,7 +7,7 @@ cd android/CM10
 repo init -u git://github.com/CyanogenMod/android.git -b cm-10.1
 ```
 
-Modify your `.repo/local_manifest.xml` as follows:
+Modify your `.repo/local_manifest/roomservice.xml` as follows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
