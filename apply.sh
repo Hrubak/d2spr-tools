@@ -59,6 +59,13 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
+repo start auto external/bluetooth/bluedroid
+echo "REVERT: Bluetooth: Change Sampling Frequency to 48 kHz ."
+cdv external/bluetooth/bluedroid
+git reset --hard
+git revert -n 69f86c8d0f1f2d1adfd04f94bfd4580a3bc61d4c 
+cdb
+
 repo start auto packages/apps/Trebuchet
 echo "Workspace and AppList Icon Tap/Touch"
 cdv packages/apps/Trebuchet
