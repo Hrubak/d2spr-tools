@@ -77,7 +77,7 @@ repo start auto device/samsung/msm8960-common
 echo "msm8960-common: Add haptic feedback control prefs"
 cdv device/samsung/msm8960-common
 git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/81/35981/4 && git cherry-pick FETCH_HEAD
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/81/35981/5 && git cherry-pick FETCH_HEAD
 cdb
 
 ##### SUCCESS ####
