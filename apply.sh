@@ -59,26 +59,26 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-repo start auto kernel/samsung/d2
-echo "immvibespi: add sysfs interface for controlling vibe intensity"
-cdv kernel/samsung/d2
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/75/36175/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto kernel/samsung/d2
+#echo "immvibespi: add sysfs interface for controlling vibe intensity"
+#cdv kernel/samsung/d2
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/75/36175/1 && git cherry-pick FETCH_HEAD
+#cdb
 
-repo start auto device/samsung/d2-common
-echo "d2-common: Add permissions for vibration control"
-cdv device/samsung/d2-common
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/32/36232/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto device/samsung/d2-common
+#echo "d2-common: Add permissions for vibration control"
+#cdv device/samsung/d2-common
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/32/36232/1 && git cherry-pick FETCH_HEAD
+#cdb
 
-repo start auto device/samsung/msm8960-common
-echo "msm8960-common: Add haptic feedback control prefs"
-cdv device/samsung/msm8960-common
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/81/35981/5 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto device/samsung/msm8960-common
+#echo "msm8960-common: Add haptic feedback control prefs"
+#cdv device/samsung/msm8960-common
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_msm8960-common refs/changes/81/35981/5 && git cherry-pick FETCH_HEAD
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
