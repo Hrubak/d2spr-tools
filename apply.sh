@@ -66,12 +66,12 @@ git reset --hard
 git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/75/36175/1 && git cherry-pick FETCH_HEAD
 cdb
 
-#repo start auto packages/apps/Trebuchet
-#echo "Workspace and AppList Icon Tap/Touch"
-#cdv packages/apps/Trebuchet
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Trebuchet refs/changes/73/32873/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto device/samsung/d2-common
+echo "d2-common: Add permissions for vibration control"
+cdv device/samsung/d2-common
+git reset --hard
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/32/36232/1 && git cherry-pick FETCH_HEAD
+cdb
 
 repo start auto device/samsung/msm8960-common
 echo "msm8960-common: Add haptic feedback control prefs"
