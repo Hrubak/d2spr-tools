@@ -74,12 +74,12 @@ git reset --hard
 git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/10/36410/3 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto vendor/samsung
-echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
-cdv vendor/samsung
-git reset --hard
-git cherry-pick a3ba4ada070cd346905fc00b39aaab994b4cb745 --no-edit
-cdb
+#repo start auto vendor/samsung
+#echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
+#cdv vendor/samsung
+#git reset --hard
+#git cherry-pick a3ba4ada070cd346905fc00b39aaab994b4cb745 --no-edit
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
