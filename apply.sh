@@ -59,19 +59,19 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-#repo start auto kernel/samsung/d2
-#echo "immvibespi: add sysfs interface for controlling vibe intensity"
-#cdv kernel/samsung/d2
-#git reset --hard
-#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/75/36175/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto kernel/samsung/d2
+echo "net: bcmdhd: update to version 1.61.47 from the GT-9505 source drop"
+cdv kernel/samsung/d2
+git reset --hard
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/22/36122/2 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto device/samsung/d2-common
-#echo "d2-common: Add permissions for vibration control"
-#cdv device/samsung/d2-common
-#git reset --hard
-#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/32/36232/1 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto hardware/qcom/gps
+echo "qcom/gps: Squashed updates/fixes from jb branch"
+cdv hardware/qcom/gps
+git reset --hard
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/10/36410/3 && git cherry-pick FETCH_HEAD
+cdb
 
 #repo start auto device/samsung/msm8960-common
 #echo "msm8960-common: Add haptic feedback control prefs"
