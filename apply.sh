@@ -59,13 +59,13 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-repo start auto kernel/samsung/d2
-echo "net: bcmdhd: update to version 1.61.47 from the GT-9505 source drop"
-cdv kernel/samsung/d2
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/22/36122/2 && git cherry-pick FETCH_HEAD
-vim include/sound/Kbuild
-cdb
+#repo start auto kernel/samsung/d2
+#echo "net: bcmdhd: update to version 1.61.47 from the GT-9505 source drop"
+#cdv kernel/samsung/d2
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/22/36122/2 && git cherry-pick FETCH_HEAD
+#vim include/sound/Kbuild
+#cdb
 
 repo start auto hardware/qcom/gps
 echo "qcom/gps: Squashed updates/fixes from jb branch"
