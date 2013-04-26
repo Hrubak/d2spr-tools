@@ -67,11 +67,11 @@ cdb
 #vim include/sound/Kbuild
 #cdb
 
-repo start auto hardware/qcom/gps
-echo "qcom/gps: Squashed updates/fixes from jb branch"
-cdv hardware/qcom/gps
+repo start auto device/samsung/qcom-common
+echo "qcom-common: Disable retention mode on msm8960"
+cdv device/samsung/qcom-common
 git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_gps refs/changes/10/36410/3 && git cherry-pick FETCH_HEAD
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_qcom-common refs/changes/43/36443/1 && git cherry-pick FETCH_HEAD
 cdb
 
 #repo start auto vendor/samsung
