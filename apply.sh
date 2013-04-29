@@ -67,12 +67,12 @@ cdb
 #vim include/sound/Kbuild
 #cdb
 
-repo start auto device/samsung/qcom-common
-echo "qcom-common: Disable retention mode on msm8960"
-cdv device/samsung/qcom-common
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_qcom-common refs/changes/43/36443/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto device/samsung/qcom-common
+#echo "qcom-common: Disable retention mode on msm8960"
+#cdv device/samsung/qcom-common
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_qcom-common refs/changes/43/36443/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 #repo start auto vendor/samsung
 #echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
