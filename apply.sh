@@ -59,13 +59,6 @@ set -e
 #git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 #cdb
 
-repo start auto kernel/samsung/d2
-echo "net: bcmdhd: update to version 1.61.47 from the GT-9505 source drop"
-cdv kernel/samsung/d2
-git reset --hard
-git apply ~/android/file.patch
-cdb
-
 #repo start auto device/samsung/qcom-common
 #echo "qcom-common: Disable retention mode on msm8960"
 #cdv device/samsung/qcom-common
