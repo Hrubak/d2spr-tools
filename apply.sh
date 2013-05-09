@@ -63,7 +63,7 @@ repo start auto kernel/samsung/d2
 echo "ARM: 7467/1: mutex: use generic xchg-based implementation for ARMv6+"
 cdv kernel/samsung/d2
 git reset --hard
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/21/37221/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://Hrubak@review.cyanogenmod.org:29418/CyanogenMod/android_kernel_samsung_d2 refs/changes/21/37221/1 && git cherry-pick FETCH_HEAD
 cdb
 
 #repo start auto vendor/samsung
