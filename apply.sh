@@ -59,12 +59,12 @@ set -e
 #git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 #cdb
 
-repo start auto kernel/samsung/d2
-echo "ARM: 7467/1: mutex: use generic xchg-based implementation for ARMv6+"
-cdv kernel/samsung/d2
-git reset --hard
-git fetch ssh://Hrubak@review.cyanogenmod.org:29418/CyanogenMod/android_kernel_samsung_d2 refs/changes/21/37221/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto kernel/samsung/d2
+#echo "ARM: 7467/1: mutex: use generic xchg-based implementation for ARMv6+"
+#cdv kernel/samsung/d2
+#git reset --hard
+#git fetch ssh://Hrubak@review.cyanogenmod.org:29418/CyanogenMod/android_kernel_samsung_d2 refs/changes/21/37221/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 #repo start auto vendor/samsung
 #echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
