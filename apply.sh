@@ -52,12 +52,12 @@ set -e
 
 ################ Apply Patches Below ####################
 
-#repo start auto frameworks/base
-#echo "REVERT: Revert GPS changes for now until issues are resolved."
-#cdv frameworks/base
-#git reset --hard
-#git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
-#cdb
+repo start auto frameworks/base
+echo "REVERT: Revert GPS changes for now until issues are resolved."
+cdv frameworks/base
+git reset --hard
+git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
+cdb
 
 #repo start auto kernel/samsung/d2
 #echo "ARM: 7467/1: mutex: use generic xchg-based implementation for ARMv6+"
