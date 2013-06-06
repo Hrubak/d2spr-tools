@@ -66,12 +66,12 @@ git reset --hard
 git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/76/43476/18 && git cherry-pick FETCH_HEAD
 cdb
 
-#repo start auto vendor/samsung
-#echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
-#cdv vendor/samsung
-#git reset --hard
-#git cherry-pick a3ba4ada070cd346905fc00b39aaab994b4cb745 --no-edit
-#cdb
+repo start auto kernel/samsung/d2
+echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
+cdv kernel/samsung/d2
+git reset --hard
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/30/43830/1 && git cherry-pick FETCH_HEAD
+cdb
 
 ##### SUCCESS ####
 SUCCESS=true
