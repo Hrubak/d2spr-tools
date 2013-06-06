@@ -67,7 +67,7 @@ git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_op
 cdb
 
 repo start auto kernel/samsung/d2
-echo "d2-common: bcmdhd: update firmware to latest (VRBMB1)"
+echo "d2: Squashed revert of msm_serial_hs.c updates"
 cdv kernel/samsung/d2
 git reset --hard
 git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/30/43830/1 && git cherry-pick FETCH_HEAD
