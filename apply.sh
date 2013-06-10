@@ -59,19 +59,19 @@ git reset --hard
 git revert -n ddbadd0e3e37d37f6e3e657950b3f317228d5808 
 cdb
 
-repo start auto frameworks/opt/telephony
-echo "SamsungQualcommRIL: fix errors and replaces it with known values"
-cdv frameworks/opt/telephony
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/76/43476/18 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto frameworks/opt/telephony
+#echo "SamsungQualcommRIL: fix errors and replaces it with known values"
+#cdv frameworks/opt/telephony
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/76/43476/18 && git cherry-pick FETCH_HEAD
+#cdb
 
-repo start auto kernel/samsung/d2
-echo "d2: Squashed revert of msm_serial_hs.c updates"
-cdv kernel/samsung/d2
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/30/43830/1 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto kernel/samsung/d2
+#echo "d2: Squashed revert of msm_serial_hs.c updates"
+#cdv kernel/samsung/d2
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/30/43830/1 && git cherry-pick FETCH_HEAD
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
