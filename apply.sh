@@ -55,22 +55,22 @@ repo start auto packages/apps/Gallery2
 echo "Camera: Bring Samsung camera fixes and features to 4.3"
 cdv packages/apps/Gallery2
 git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/87/46287/9 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/87/46287/17 && git cherry-pick FETCH_HEAD
 cdb
 
 repo start auto device/samsung/d2-common
 echo "d2-common:  Move Camera overlay settings to Gallery2"
 cdv device/samsung/d2-common
 git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/72/46772/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/72/46772/3 && git cherry-pick FETCH_HEAD
 cdb
 
-repo start auto hardware/qcom/display-caf
-echo "libgralloc: Allow ionFlags for GRALLOC_USAGE_PRIVATE_MM_HEAP case"
-cdv  hardware/qcom/display-caf
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_display-caf refs/changes/21/46521/5 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto hardware/qcom/display-caf
+#echo "libgralloc: Allow ionFlags for GRALLOC_USAGE_PRIVATE_MM_HEAP case"
+#cdv  hardware/qcom/display-caf
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_display-caf refs/changes/21/46521/5 && git cherry-pick FETCH_HEAD
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
