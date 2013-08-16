@@ -58,19 +58,19 @@ set -e
 #git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/87/46287/17 && git cherry-pick FETCH_HEAD
 #cdb
 
-repo start auto device/samsung/d2-common
-echo "d2-common : Enable SELinux"
-cdv device/samsung/d2-common
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/59/46859/7 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto device/samsung/d2-common
+#echo "d2-common : Enable SELinux"
+#cdv device/samsung/d2-common
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/59/46859/7 && git cherry-pick FETCH_HEAD
+#cdb
 
-repo start auto kernel/samsung/d2
-echo "Re-enable standalone power collapse on d2 and apex devices"
-cdv  kernel/samsung/d2
-git reset --hard
-git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/50/46950/3 && git cherry-pick FETCH_HEAD
-cdb
+#repo start auto kernel/samsung/d2
+#echo "Re-enable standalone power collapse on d2 and apex devices"
+#cdv  kernel/samsung/d2
+#git reset --hard
+#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/50/46950/3 && git cherry-pick FETCH_HEAD
+#cdb
 
 ##### SUCCESS ####
 SUCCESS=true
