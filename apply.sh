@@ -51,19 +51,19 @@ repo abandon auto
 set -e
 
 ################ Apply Patches Below ####################
-#repo start auto packages/apps/Gallery2
-#echo "Camera: Bring Samsung camera fixes and features to 4.3"
-#cdv packages/apps/Gallery2
-#git reset --hard
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Gallery2 refs/changes/87/46287/17 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto frameworks/opt/telephony
+echo "Fix 1x/evdo data call for NV based subscription."
+cdv frameworks/opt/telephony
+git reset --hard
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/98/48198/1 && git cherry-pick FETCH_HEAD
+cdb
 
-#repo start auto device/samsung/d2-common
-#echo "d2-common : Enable SELinux"
-#cdv device/samsung/d2-common
-#git reset --hard
-#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_device_samsung_d2-common refs/changes/59/46859/7 && git cherry-pick FETCH_HEAD
-#cdb
+repo start auto frameworks/opt/telephony
+echo "Telephony: Query SignalStrength when there is a RAT change."
+cdv frameworks/opt/telephony
+git reset --hard
+git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/48200/1 && git cherry-pick FETCH_HEAD
+cdb
 
 #repo start auto kernel/samsung/d2
 #echo "Re-enable standalone power collapse on d2 and apex devices"
