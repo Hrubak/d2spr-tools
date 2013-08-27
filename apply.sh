@@ -47,35 +47,22 @@ fi
 BASEDIR=$(pwd)
 
 # Abandon auto topic branch
-repo abandon auto
 set -e
 . build/envsetup.sh
 
 ################ Apply Patches Below ####################
 
-echo "cm: Add CMAccount to the build"
-repopick 48599
+echo "Re-enable standalone power collapse on d2 and apex devices"
+repopick 46950
 
-#repo start auto frameworks/opt/telephony
-#echo "Fix 1x/evdo data call for NV based subscription."
-#cdv frameworks/opt/telephony
-#git reset --hard
-#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/98/48198/1 && git cherry-pick FETCH_HEAD
-#cdb
+echo "Framework: Development setting to enable navbar (1 of 2)"
+repopick 46928
 
-#repo start auto frameworks/opt/telephony
-#echo "Telephony: Query SignalStrength when there is a RAT change."
-#cdv frameworks/opt/telephony
-#git reset --hard
-#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/48200/1 && git cherry-pick FETCH_HEAD
-#cdb
+echo "Settings: Development setting to enable navbar (2 of 2)"
+repopick 46927
 
-#repo start auto kernel/samsung/d2
-#echo "Re-enable standalone power collapse on d2 and apex devices"
-#cdv  kernel/samsung/d2
-#git reset --hard
-#git fetch http://Hrubak@review.cyanogenmod.org/CyanogenMod/android_kernel_samsung_d2 refs/changes/50/46950/3 && git cherry-pick FETCH_HEAD
-#cdb
+echo "Revert DcTracker: ensure subscription is from NV before calling onRecordsLoaded"
+repopick 48873
 
 ##### SUCCESS ####
 SUCCESS=true
