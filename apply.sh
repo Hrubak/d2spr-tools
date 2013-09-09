@@ -55,11 +55,11 @@ set -e
 echo "Re-enable standalone power collapse on d2 and apex devices"
 repopick 46950
 
-echo "Framework: Development setting to enable navbar (1 of 2)"
-repopick 46928
+#echo "Framework: Development setting to enable navbar (1 of 2)"
+#repopick 46928
 
-echo "Settings: Development setting to enable navbar (2 of 2)"
-repopick 46927
+#echo "Settings: Development setting to enable navbar (2 of 2)"
+#repopick 46927
 
 #echo "Revert DcTracker: ensure subscription is from NV before calling onRecordsLoaded"
 #repopick 48873
