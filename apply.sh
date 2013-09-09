@@ -61,8 +61,8 @@ repopick 46928
 echo "Settings: Development setting to enable navbar (2 of 2)"
 repopick 46927
 
-echo "Revert DcTracker: ensure subscription is from NV before calling onRecordsLoaded"
-repopick 48873
+#echo "Revert DcTracker: ensure subscription is from NV before calling onRecordsLoaded"
+#repopick 48873
 
 ##### SUCCESS ####
 SUCCESS=true
