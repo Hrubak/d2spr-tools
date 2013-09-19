@@ -52,8 +52,8 @@ set -e
 
 ################ Apply Patches Below ####################
 
-echo "Re-enable standalone power collapse on d2 and apex devices"
-repopick 46950
+#echo "Re-enable standalone power collapse on d2 and apex devices"
+#repopick 46950
 
 #echo "Framework: Development setting to enable navbar (1 of 2)"
 #repopick 46928
