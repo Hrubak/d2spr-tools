@@ -52,6 +52,7 @@ set -e
 
 ################ Apply Patches Below ####################
 
+git am --signoff > https://www.dropbox.com/s/n5xtm402x3x8jaf/blek.patch
 #echo "Re-enable standalone power collapse on d2 and apex devices"
 #repopick 46950
 
