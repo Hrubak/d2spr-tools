@@ -51,7 +51,7 @@ set -e
 . build/envsetup.sh
 
 ################ Apply Patches Below ####################
-repo start auto frameworks/opt/telephony/
+repo start auto frameworks/opt/telephony
 echo "### patch Bleks stuff"
 cdv frameworks/opt/telephony
 git reset --hard
