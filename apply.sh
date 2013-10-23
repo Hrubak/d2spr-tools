@@ -51,12 +51,7 @@ set -e
 . build/envsetup.sh
 
 ################ Apply Patches Below ####################
-repo start auto frameworks/opt/telephony
-echo "### patch Bleks stuff"
-cdv frameworks/opt/telephony
-git reset --hard
-http_patch https://www.dropbox.com/s/n5xtm402x3x8jaf/blek.patch
-cdb
+
 #echo "Re-enable standalone power collapse on d2 and apex devices"
 #repopick 46950
 
