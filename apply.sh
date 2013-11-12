@@ -48,7 +48,7 @@ BASEDIR=$(pwd)
 
 # Abandon auto topic branch
 set -e
-
+. build/envsetup.sh
 
 ################ Apply Patches Below ####################
 
