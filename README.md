@@ -16,7 +16,7 @@ Modify your `.repo/local_manifest/roomservice.xml` as follows:
     <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-11.0" />
     <project name="CyanogenMod/android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="github" />
     <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
-    <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" />
     <project name="CyanogenMod/android_device_samsung_d2-common" path="device/samsung/d2-common" remote="github" />
     <project name="CyanogenMod/android_kernel_samsung_d2" path="kernel/samsung/d2" remote="github" />
     <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
