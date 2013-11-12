@@ -52,17 +52,8 @@ set -e
 
 ################ Apply Patches Below ####################
 
-#echo "Re-enable standalone power collapse on d2 and apex devices"
-#repopick 46950
+repopick -s s 53072 53073 53074 53075 53102 53115 53116 53126 53131 53172 53173 53177 53178 53179 53194 53195 53196 53302 53309 53376 53377 53400 53399 53398 53328 53356 53365 53416 53445 53528
 
-#echo "Framework: Development setting to enable navbar (1 of 2)"
-#repopick 46928
-
-#echo "Settings: Development setting to enable navbar (2 of 2)"
-#repopick 46927
-
-#echo "Revert DcTracker: ensure subscription is from NV before calling onRecordsLoaded"
-#repopick 48873
 
 ##### SUCCESS ####
 SUCCESS=true
