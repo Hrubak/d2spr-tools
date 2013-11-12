@@ -50,7 +50,7 @@ BASEDIR=$(pwd)
 set -e
 . build/envsetup.sh
 repo abandon auto
-
+repo abandon s
 ################ Apply Patches Below ####################
 
 repopick -s auto 53075 53102 53115 53116 53126 53131 53172 53173 53177 53178 53179 53194 53195 53196 53302 53309 53376 53377 53356 53365 53416 53445 53528 53409 53411 53413 53414
