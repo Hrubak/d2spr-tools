@@ -2,9 +2,9 @@ L710/d2spr Build Instructions
 =======================
 http://wiki.cyanogenmod.org/w/Build_for_d2spr
 ```
-mkdir -p android/CM11
-cd android/CM11
-repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
+mkdir -p android/CM12
+cd android/CM12
+repo init -u git://github.com/CyanogenMod/android.git -b cm-12.0
 ```
 
 Modify your `.repo/local_manifest/roomservice.xml` as follows:
@@ -12,8 +12,8 @@ Modify your `.repo/local_manifest/roomservice.xml` as follows:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
-    <project name="Hrubak/d2spr-tools.git" path="d2spr-tools" remote="github" revision="cm-11.0" />
-    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-11.0" />
+    <project name="Hrubak/d2spr-tools.git" path="d2spr-tools" remote="github" revision="cm-12.0" />
+    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-12.0" />
     <project name="CyanogenMod/android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="github" />
     <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
     <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" />

@@ -52,13 +52,13 @@ set -e
 
 ################ Apply Patches Below ####################
 
-repo start auto frameworks/base
-echo "Add signal strength mod"
-cdv frameworks/base
-git reset --hard
-http_patch https://dl.dropboxusercontent.com/u/13144052/CM11/hrubak/0001-SIGNAL-STRENGTH-MOD.patch
-http_patch https://dl.dropboxusercontent.com/u/13144052/CM11/hrubak/0001-Make-the-signalbars-show-when-not-connected-or-conne.patch
-cdb
+#repo start auto frameworks/base
+#echo "Add signal strength mod"
+#cdv frameworks/base
+#git reset --hard
+#http_patch https://dl.dropboxusercontent.com/u/13144052/CM11/hrubak/0001-SIGNAL-STRENGTH-MOD.patch
+#http_patch https://dl.dropboxusercontent.com/u/13144052/CM11/hrubak/0001-Make-the-signalbars-show-when-not-connected-or-conne.patch
+#cdb
 
 
 ##### SUCCESS ####
