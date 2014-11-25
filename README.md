@@ -14,7 +14,7 @@ Modify your `.repo/local_manifest/roomservice.xml` as follows:
   <manifest>
     <project name="Hrubak/d2spr-tools.git" path="d2spr-tools" remote="github" revision="cm-12.0" />
     <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-12.0" />
-    <project name="CyanogenMod/android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="github" />
+    <project name="CyanogenMod/android_device_samsung_d2spr" path="device/samsung/d2spr" remote="github" />
     <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
     <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" />
     <project name="CyanogenMod/android_device_samsung_d2-common" path="device/samsung/d2-common" remote="github" />
