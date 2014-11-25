@@ -60,7 +60,7 @@ set -e
 #http_patch https://dl.dropboxusercontent.com/u/13144052/CM11/hrubak/0001-Make-the-signalbars-show-when-not-connected-or-conne.patch
 #cdb
 
-repopick -b 76738 78752 78905 77247 78857 78014 78017 78023
+repopick -b 76738 78752 78905 77247 78857 78014 78017 78023 79243
 
 ##### SUCCESS ####
 SUCCESS=true
